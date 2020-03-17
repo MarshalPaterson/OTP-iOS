@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Result: Decodable, Identifiable{
+struct Login: Decodable {    
     var status: String
 }

@@ -11,6 +11,7 @@ import SwiftUI
 struct LoginView: View {
     @ObservedObject var loginViewModel = LoginViewModel()
     
+    
     var body: some View {
         VStack {
             Spacer()
@@ -19,17 +20,22 @@ struct LoginView: View {
                 .bold()
                 .multilineTextAlignment(.center)
             HStack {
-                SecureField("", text: $loginViewModel.text)
+                SecureField("", text: $loginViewModel.otpText)
                     .keyboardType(.numberPad)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .textContentType(.oneTimeCode)
                     .keyboardType(.numberPad)
             Button(action: {
                 print("Delete button tapped!")
+                self.loginViewModel.callLoginAPI()
             }) {
                 Image("search")
                     .font(.largeTitle)
             }}
+            Text(loginViewModel.loginResult.status)
+                .font(.system(size: 14))
+                .bold()
+                .foregroundColor(Color.red)
             Spacer()
             Spacer()
         }.padding()

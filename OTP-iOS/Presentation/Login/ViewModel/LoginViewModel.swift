@@ -10,39 +10,25 @@ import SwiftUI
 import Combine
 
 class LoginViewModel: ObservableObject {
-    @Published var text = ""
-    @Published var result = MovieList(results: [])
+    @Published var otpText = ""
+    @Published var loginResult = Login(status: "")
     @Published var loading = false
-    let service: ServiceProtocol
-    private var subCancellable: AnyCancellable!
-    private var validCharSet = CharacterSet(charactersIn: "1234567890.")
+    
+    let service: LoginServiceProtocol
 
-    init(service: ServiceProtocol = APIService()) {
-        subCancellable = $text.sink { val in
-            //check if the new string contains any invalid characters
-            if val.rangeOfCharacter(from: self.validCharSet.inverted) != nil {
-                //clean the string (do this on the main thread to avoid overlapping with the current ContentView update cycle)
-                DispatchQueue.main.async {
-                    self.text = String(self.text.unicodeScalars.filter {
-                        self.validCharSet.contains($0)
-                    })
-                }
-            }
-        }
-    }
-
-    deinit {
-        subCancellable.cancel()
+    init(service: LoginServiceProtocol = LoginService()) {
+        self.service = service        
     }
     
-    func callAPI() {
+    func callLoginAPI() {
+        
         self.loading = true
-        service.postLogin { res in
-            self.loading = false
-            guard let res = res else {
-                return
-            }
-            self.res.results = res
+        service.callLoginApi(search: otpText) { res in
+            //self.loading = false
+//            guard let res = res else {
+//                return
+//            }
+            self.loginResult.status = res?.status ?? "Failed to login, please try again."
         }
     }
 }

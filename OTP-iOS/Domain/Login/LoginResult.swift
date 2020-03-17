@@ -1,5 +1,5 @@
 //
-//  LoginServiceProtocol.swift
+//  LoginResult.swift
 //  OTP-iOS
 //
 //  Created by Marshal Paterson on 17/3/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoginServiceProtocol {
-    func callLoginApi(search: String, completion: @escaping (Login?) -> Void)
+struct LoginResult: Decodable {
+    var results: Login
 }

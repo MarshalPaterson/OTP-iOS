@@ -19,7 +19,8 @@
 		0FD1796124207307000F1B5B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1796024207307000F1B5B /* LoginViewModel.swift */; };
 		0FD1796B2420A3FB000F1B5B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1796A2420A3FB000F1B5B /* LoginService.swift */; };
 		0FD1796D2420A429000F1B5B /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD1796C2420A429000F1B5B /* LoginServiceProtocol.swift */; };
-		0FD179712420A57D000F1B5B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD179702420A57D000F1B5B /* Result.swift */; };
+		0FD179712420A57D000F1B5B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD179702420A57D000F1B5B /* Login.swift */; };
+		0FED35B12420BB2000F217BE /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED35B02420BB2000F217BE /* LoginResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,8 @@
 		0FD1796024207307000F1B5B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0FD1796A2420A3FB000F1B5B /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		0FD1796C2420A429000F1B5B /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
-		0FD179702420A57D000F1B5B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		0FD179702420A57D000F1B5B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0FED35B02420BB2000F217BE /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +244,8 @@
 		0FD1796F2420A568000F1B5B /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0FD179702420A57D000F1B5B /* Result.swift */,
+				0FD179702420A57D000F1B5B /* Login.swift */,
+				0FED35B02420BB2000F217BE /* LoginResult.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -384,7 +387,8 @@
 				0FD1795D24206FDB000F1B5B /* LoginView.swift in Sources */,
 				0FD1796D2420A429000F1B5B /* LoginServiceProtocol.swift in Sources */,
 				0FD1796124207307000F1B5B /* LoginViewModel.swift in Sources */,
-				0FD179712420A57D000F1B5B /* Result.swift in Sources */,
+				0FED35B12420BB2000F217BE /* LoginResult.swift in Sources */,
+				0FD179712420A57D000F1B5B /* Login.swift in Sources */,
 				0FD1795F24207000000F1B5B /* RewardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
