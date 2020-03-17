@@ -16,7 +16,7 @@ class LoginService : LoginServiceProtocol {
     private func loadData(search: String, completion: @escaping (Login?) -> Void) {
         guard let url = URL(string: "http://floral-cherry-7673.getsandbox.com/login") else { return }
         
-        let parameters = ["code": "1234"]
+        let parameters = ["code": search]
 
         //now create the URLRequest object using the url object
         var request = URLRequest(url: url)
@@ -33,11 +33,15 @@ class LoginService : LoginServiceProtocol {
         
         URLSession.shared.dataTask(with: request){ (data, _, _) in
             guard let data = data else {
+                DispatchQueue.main.async {
                 completion(nil)
+                }
                 return
             }
             guard let result = try? JSONDecoder().decode(Login.self, from: data) else {
+                DispatchQueue.main.async {
                 completion(nil)
+                }
                 return
             }
             DispatchQueue.main.async {

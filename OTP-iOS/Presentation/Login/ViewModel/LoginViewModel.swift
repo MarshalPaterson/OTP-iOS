@@ -21,14 +21,10 @@ class LoginViewModel: ObservableObject {
     }
     
     func callLoginAPI() {
-        
         self.loading = true
-        service.callLoginApi(search: otpText) { res in
-            //self.loading = false
-//            guard let res = res else {
-//                return
-//            }
+            self.service.callLoginApi(search: self.otpText) { res in
             self.loginResult.status = res?.status ?? "Failed to login, please try again."
         }
+
     }
 }
