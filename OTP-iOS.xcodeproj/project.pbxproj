@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0079092421872A00078DA4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0079082421872A00078DA4 /* ActivityIndicator.swift */; };
 		0F56F06F2420691C0037B77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56F06E2420691C0037B77B /* AppDelegate.swift */; };
 		0F56F0712420691C0037B77B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56F0702420691C0037B77B /* SceneDelegate.swift */; };
 		0F56F0752420691F0037B77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F56F0742420691F0037B77B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0079082421872A00078DA4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		0F56F06B2420691C0037B77B /* OTP-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OTP-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F56F06E2420691C0037B77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F56F0702420691C0037B77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0079072421870D00078DA4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F0079082421872A00078DA4 /* ActivityIndicator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		0F56F0622420691C0037B77B = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		0FD1795924206D8B000F1B5B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0F0079072421870D00078DA4 /* Utils */,
 				0FD1796324209E1C000F1B5B /* Reward */,
 				0FD1796224209E10000F1B5B /* Login */,
 			);
@@ -385,6 +396,7 @@
 				0FD1796D2420A429000F1B5B /* LoginServiceProtocol.swift in Sources */,
 				0FD1796124207307000F1B5B /* LoginViewModel.swift in Sources */,
 				0FD179712420A57D000F1B5B /* Login.swift in Sources */,
+				0F0079092421872A00078DA4 /* ActivityIndicator.swift in Sources */,
 				0FD1795F24207000000F1B5B /* RewardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
