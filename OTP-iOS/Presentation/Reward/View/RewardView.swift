@@ -9,18 +9,21 @@
 import SwiftUI
 
 struct RewardView: View {
-    
+    @Binding var showView : Bool
     var body: some View {
         VStack {
-            Text("Reward")
+            HStack {
+                Button(action:{self.showView = false}){
+                    Image("left-arrow")
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                }
+                Spacer()
+                Text("Reward")
+                Spacer()
+            }.padding()
             LottieView(name: "1138-deer")
         }.navigationBarTitle(Text("Reward"), displayMode: .inline)
             .navigationBarHidden(true)
-    }
-}
-
-struct RewardView_Previews: PreviewProvider {
-    static var previews: some View {
-        RewardView()
     }
 }

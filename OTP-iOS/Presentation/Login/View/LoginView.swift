@@ -28,7 +28,8 @@ struct LoginView: View {
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .textContentType(.oneTimeCode)
                             .keyboardType(.numberPad)
-                        NavigationLink(destination: RewardView(), isActive: self.$loginViewModel.isLoggedIn) {
+                        
+                        NavigationLink(destination: RewardView(showView: self.$loginViewModel.isLoggedIn), isActive: self.$loginViewModel.isLoggedIn) {
                             Button(action: {
                                 self.loginViewModel.callLoginAPI()
                             }) {
