@@ -35,6 +35,7 @@ struct LoginView: View {
                                 Image("search")
                                     .font(.largeTitle)
                             }}}
+                    
                     Text(loginViewModel.loginResult.status)
                         .font(.subheadline)
                         .bold()
