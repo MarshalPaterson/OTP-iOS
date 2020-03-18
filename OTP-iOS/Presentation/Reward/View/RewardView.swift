@@ -11,9 +11,11 @@ import SwiftUI
 struct RewardView: View {
     
     var body: some View {
-       VStack {
+        VStack {
+            Text("Reward")
             LottieView(name: "1138-deer")
-        }
+        }.navigationBarTitle(Text("Reward"), displayMode: .inline)
+            .navigationBarHidden(true)
     }
 }
 
