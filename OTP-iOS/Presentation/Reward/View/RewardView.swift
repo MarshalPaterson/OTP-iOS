@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct RewardView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       VStack {
+            LottieView(name: "1138-deer")
+        }
     }
 }
 
