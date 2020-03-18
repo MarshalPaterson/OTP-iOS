@@ -12,18 +12,17 @@ struct RewardView: View {
     @Binding var showView : Bool
     var body: some View {
         VStack {
-            HStack {
-                Button(action:{self.showView = false}){
-                    Image("left-arrow")
-                        .resizable()
-                        .frame(width: 32, height: 32)
-                }
-                Spacer()
-                Text("Reward")
-                Spacer()
-            }.padding()
             LottieView(name: "1138-deer")
         }.navigationBarTitle(Text("Reward"), displayMode: .inline)
-            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                HStack {
+                    Button(action:{self.showView = false}){
+                        Image("left-arrow")
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                    }
+                }
+        )
     }
 }
