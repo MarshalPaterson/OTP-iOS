@@ -30,8 +30,6 @@ struct LoginView: View {
                             .keyboardType(.numberPad)
                         NavigationLink(destination: RewardView(), isActive: self.$loginViewModel.isLoggedIn) {
                             Button(action: {
-                                print("Delete button tapped!")
-                                self.loginViewModel.isLoggedIn = false
                                 self.loginViewModel.callLoginAPI()
                             }) {
                                 Image("search")
