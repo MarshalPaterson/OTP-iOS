@@ -24,7 +24,6 @@ struct LoginView: View {
                         .multilineTextAlignment(.center)
                     HStack {
                         SecureField("", text: $loginViewModel.otpText)
-                            .keyboardType(.numberPad)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .textContentType(.oneTimeCode)
                             .keyboardType(.numberPad)
