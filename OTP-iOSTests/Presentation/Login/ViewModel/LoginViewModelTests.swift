@@ -29,12 +29,12 @@ class LoginViewModelTests: XCTestCase {
     func testEmptyData() {
         let expected = LoginMock.mock(status: "error")
         let service = LoginMockService(mockData: expected)
-
+        
         let viewModel = LoginViewModel(service: service)
         viewModel.otpText = "11111"
         
         viewModel.callLoginAPI()
-
+        
         XCTAssertTrue(!viewModel.loading)
         XCTAssertEqual(viewModel.loginResult.status, "Failed to login, please try again.")
         XCTAssertEqual(viewModel.isLoggedIn, false)

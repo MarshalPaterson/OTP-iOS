@@ -10,7 +10,7 @@ import XCTest
 @testable import OTP_iOS
 
 class LoginTests: XCTestCase {
-
+    
     func testSuccessParser() {
         let json = """
         {
@@ -23,5 +23,5 @@ class LoginTests: XCTestCase {
         XCTAssertNotNil(login)
         XCTAssertEqual(login.status, LoginMock.mock(status: "ok").status)
     }
-
+    
 }

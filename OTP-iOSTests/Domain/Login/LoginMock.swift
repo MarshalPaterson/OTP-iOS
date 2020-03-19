@@ -9,12 +9,6 @@
 import Foundation
 @testable import OTP_iOS
 
-//extension Login {
-//    static func with(status: "ok") -> Login {
-//        return Login(status: status)
-//    }
-//}
-
 class LoginMock {
     static func mock(status:String) -> Login {
         return Login(status: status)
