@@ -3,7 +3,7 @@
 # OTP-iOS
 MVVM, Clean Architect in Swift, SwiftUI. On the folder structure, we have separated concerns for Data, Domain, and Presentation. In the presentation layer we have our components that then have View and ViewModel.
 
-![Alt text](demo/demo.gif?raw=true "Demo")
+![Alt text](readmeAssets/demo.gif?raw=true "Demo")
 
 # Run the app
 Open file OTP-iOS.xcodeproj and hit play.
