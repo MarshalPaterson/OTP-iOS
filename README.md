@@ -14,8 +14,8 @@ Lottie has been imported as a Swift Package, there are no pods or other dependen
 # Tests
 The test can be run in Xcode, the structure follows the main app structure and is easily identifiable. UI Tests are disabled.
 
-# TravisCI integrated
-There is TravisCI builds thought it's not supporting Swift 5.0
+## TravisCI integrated
+There is TravisCI builds though currently it's not supporting Swift 5.0
 
-# Notes:
+## Notes:
 There is limited comments, approach taken is best to read the code to understand its functionality.
