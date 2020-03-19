@@ -11,8 +11,8 @@ Open file OTP-iOS.xcodeproj and hit play.
 # Swift Package Dependencies vs Pods
 Lottie has been imported as a Swift Package, there are no pods or other dependencies.
 
-# Test coverage
-The test can be run in Xcode, the structure follows the main app structure and is easily identifiable.
+# Tests
+The test can be run in Xcode, the structure follows the main app structure and is easily identifiable. UI Tests are disabled.
 
 # TravisCI integrated
 There is TravisCI builds thought it's not supporting Swift 5.0
