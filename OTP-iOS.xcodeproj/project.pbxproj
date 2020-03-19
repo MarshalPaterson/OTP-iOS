@@ -16,7 +16,6 @@
 		0F56F0752420691F0037B77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F56F0742420691F0037B77B /* Assets.xcassets */; };
 		0F56F0782420691F0037B77B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F56F0772420691F0037B77B /* Preview Assets.xcassets */; };
 		0F56F07B2420691F0037B77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F56F0792420691F0037B77B /* LaunchScreen.storyboard */; };
-		0F56F0912420691F0037B77B /* OTP_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F56F0902420691F0037B77B /* OTP_iOSUITests.swift */; };
 		0F9E118C2421F97B00385F07 /* LoginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E118B2421F97B00385F07 /* LoginMock.swift */; };
 		0F9E11902421FB7700385F07 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E118F2421FB7700385F07 /* LoginTests.swift */; };
 		0F9E11952421FCC000385F07 /* LoginMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E11942421FCC000385F07 /* LoginMockService.swift */; };
@@ -60,8 +59,6 @@
 		0F56F0812420691F0037B77B /* OTP-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F56F0872420691F0037B77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F56F08C2420691F0037B77B /* OTP-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTP-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F56F0902420691F0037B77B /* OTP_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP_iOSUITests.swift; sourceTree = "<group>"; };
-		0F56F0922420691F0037B77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F9E118B2421F97B00385F07 /* LoginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMock.swift; sourceTree = "<group>"; };
 		0F9E118F2421FB7700385F07 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		0F9E11942421FCC000385F07 /* LoginMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMockService.swift; sourceTree = "<group>"; };
@@ -123,7 +120,6 @@
 			children = (
 				0F56F06D2420691C0037B77B /* OTP-iOS */,
 				0F56F0842420691F0037B77B /* OTP-iOSTests */,
-				0F56F08F2420691F0037B77B /* OTP-iOSUITests */,
 				0F56F06C2420691C0037B77B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,15 +166,6 @@
 				0F56F0872420691F0037B77B /* Info.plist */,
 			);
 			path = "OTP-iOSTests";
-			sourceTree = "<group>";
-		};
-		0F56F08F2420691F0037B77B /* OTP-iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0F56F0902420691F0037B77B /* OTP_iOSUITests.swift */,
-				0F56F0922420691F0037B77B /* Info.plist */,
-			);
-			path = "OTP-iOSUITests";
 			sourceTree = "<group>";
 		};
 		0F9E11872421F92C00385F07 /* Data */ = {
@@ -521,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F56F0912420691F0037B77B /* OTP_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
