@@ -2,3 +2,14 @@
 
 # OTP-iOS
 MVVM, Clean Architect in Swift, SwiftUI
+
+![Alt text](demo/demo.gif?raw=true "Demo")
+
+# Run the app
+Open file OTP-iOS.xcodeproj and hit play
+
+# Swift Package
+
+# Test coverage
+
+# TravisCI integrated
